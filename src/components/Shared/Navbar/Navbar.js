@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css'
 
 const Navbar = () => {
     return (
@@ -7,24 +9,24 @@ const Navbar = () => {
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse mr-5" id="navbarNav">
-                <ul class="navbar-nav ml-auto ">
+                <ul class="navbar-nav ml-auto color ">
                     <li class="nav-item active">
-                        <a class="nav-link  mr-5" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link nav-color  mr-5 text-info" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  mr-5" href="#">About</a>
+                        <a class="nav-link nav-color mr-5 text-info" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  mr-5 text-light " href="#">Dental services</a>
+                        <Link to='dashboard' className="nav-link nav-color mr-5 text-info ">Dashboard</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  mr-5 text-light" href="#">Reviews</a>
+                        <a class="nav-link nav-color mr-5 text-info" href="#">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  mr-5 text-light" href="#">Blogs</a>
+                        <a class="nav-link nav-color mr-5 text-info" href="#">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mr-6 text-light" href="#">Contact Us</a>
+                        <a class="nav-link nav-color mr-6 text-info" href="#">Contact Us</a>
                     </li>
                 </ul>
             </div>
